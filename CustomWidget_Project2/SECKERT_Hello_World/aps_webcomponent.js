@@ -43,5 +43,5 @@
 
 	}
 
-customElements.define("com-sap-sample-template-se'-aps", HelloWorldAps);
+customElements.define("com-demo-hw-se'-aps", HelloWorldAps);
 })();
