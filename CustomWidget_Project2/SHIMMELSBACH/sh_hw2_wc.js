@@ -3,29 +3,29 @@
     tmpl.innerHTML = `
     `;
 
-    customElements.define('com-sap-sample-helloworld', class HelloWorld extends HTMLElement {
+    customElements.define('com-sap-sample-sh-helloworld1', class HelloWorld1 extends HTMLElement {
 
 
 		constructor() {
-			super(); 
-			this._shadowRoot = this.attachShadow({mode: "open"});
+            super(); 
+            this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
             this._firstConnection = false;
             this._tagContainer;
             this._tagType = "h1";
-            this._tagText = "Hello World";
-
-		}
+            this._tagText = "Hello Stefanie - This is part 3";
+        
+        }
 
         //Fired when the widget is added to the html DOM of the page
         connectedCallback(){
             this._firstConnection = true;
-            this.redraw();       
+            this.redraw();
         }
 
          //Fired when the widget is removed from the html DOM of the page (e.g. by hide)
         disconnectedCallback(){
-        
+   
         }
 
          //When the custom widget is updated, the Custom Widget SDK framework executes this function first
@@ -35,7 +35,6 @@
 
         //When the custom widget is updated, the Custom Widget SDK framework executes this function after the update
 		onCustomWidgetAfterUpdate(oChangedProperties) {
-            console.log("Widget Adter Update")
             if (this._firstConnection){
                 this.redraw();
             }
@@ -43,7 +42,6 @@
         
         //When the custom widget is removed from the canvas or the analytic application is closed
         onCustomWidgetDestroy(){
-        
         }
 
         
@@ -51,22 +49,22 @@
         // Commented out by default
         /*
         onCustomWidgetResize(width, height){
-        
         }
         */
 
+
         //Getters and Setters
         get widgetText() {
-            console.log("get widgetText Normal")
-            return this._tagText;
+            return this._tagType;
         }
 
         set widgetText(value) {
-            console.log("set widgetText Normal")
             this._tagText = value;
         }
         // End - Getters and Setters
 
+
+        //Redraw
         redraw(){
             if (this._tagContainer){
                 this._tagContainer.parentNode.removeChild(this._tagContainer);
@@ -78,8 +76,6 @@
             this._tagContainer.appendChild(theText); 
             this._shadowRoot.appendChild(this._tagContainer);
         }
-    
-    
     });
-        
+
 })();

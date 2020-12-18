@@ -14,7 +14,7 @@
     </form>
 	`;
 
-	class HelloWorldAps extends HTMLElement {
+	let HelloWorldAps = class HelloWorldAps extends HTMLElement {
 		constructor() {
 			super();
 			this._shadowRoot = this.attachShadow({mode: "open"});
@@ -24,7 +24,7 @@
 
         //Fired when the widget is added to the html DOM of the page
         connectedCallback(){
-            this.redraw();
+            
         }
 
          //Fired when the widget is removed from the html DOM of the page (e.g. by hide)
@@ -47,9 +47,6 @@
         
         }
 
-        redraw(
-
-        )
 
         _submit(e) {
             e.preventDefault();
@@ -70,7 +67,7 @@
             return this._shadowRoot.getElementById("aps_text").value;
         }
 
-	}
+	};
 
-customElements.define("com-demo-hw-se-aps", HelloWorldAps);
+    customElements.define("com-demo-hw-se-aps", HelloWorldAps);
 })();

@@ -1,5 +1,6 @@
 (function()  {
     let tmpl = document.createElement('template');
+   // der Text hier drin wird in der SAC dargestellt
     tmpl.innerHTML = `
     `;
 
@@ -41,11 +42,22 @@
         
         //When the custom widget is resized on the canvas, the Custom Widget SDK framework executes the following JavaScript function call on the custom widget
         // Commented out by default
+        //
+        onCustomWidgetAfterUpdate(oChangedProperties) {
+            this.redraw();
+        }
         /*
         onCustomWidgetResize(width, height){
         }
         */
+        //Getters and Setters
+        get widgetText() {
+            return this._tagType;
+        }
 
+        set widgetText(value) {
+            this._tagText = value;
+        }
         redraw(){
             if (this._tagText != null){
                 if (this._tagContainer){
