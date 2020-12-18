@@ -11,8 +11,15 @@
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "com-demo-gauge",
-			"url": "CustomWidget_Project2\KBONN\webcomponent.js",
+			"tag": "com-demo-hw",
+			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/KBONN/webcomponent.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "properties",
+			"tag": "com-demo-hw-aps",
+			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/KBONN/aps_webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
