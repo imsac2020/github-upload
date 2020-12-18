@@ -15,9 +15,21 @@
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/SECKERT_Hello_World/webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
+		},
+		{
+			"kind": "styling",
+			"tag": "com-demo-hw-se-aps",
+			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/SECKERT_Hello_World/aps_webcomponent.js",
+			"integrity": "",
+			"ignoreIntegrity": true
 		}
     ],
 	"properties": {
+		"widgetText": {
+			"type": "string",
+			"description": "The text to be displayed in the widget",
+			"default" : "Hello World"
+		}
 	},
 	"methods": {
 	},
