@@ -20,7 +20,7 @@
 		{
 			"kind": "main",
 			"tag": "com-sap-sample-helloworldtp2",
-			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project3/box_bps.js",
+			"url": "https://cdn.amcharts.com/lib/4/charts.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
