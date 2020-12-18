@@ -72,5 +72,5 @@
 
 	}
 
-customElements.define("com-sap-sample-sh-helloworld1-aps", HelloWorldAps);
+customElements.define("com-sap-sample-sh-helloworld1'-aps", HelloWorldAps);
 })();
