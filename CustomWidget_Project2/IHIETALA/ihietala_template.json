@@ -1,24 +1,24 @@
 {
 	"name": "Hello World IH",
-	"description": "Hello World IH 4",
+	"description": "Hello World IH 5",
 	"eula": "",
-	"vendor": "Iiro Hietala",
+	"vendor": "IH",
 	"license": "",
-	"id": "com.sap.sample.helloworld4",
-	"newInstancePrefix": "HelloWorld4",
-	"version": "0.0.4",
+	"id": "com.sap.sample.helloworld5",
+	"newInstancePrefix": "HelloWorld5",
+	"version": "0.0.5",
 	"icon": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/icon.png",
 	"webcomponents": [
         {
 			"kind": "main",
-			"tag": "com-sap-sample-helloworld4",
+			"tag": "com-sap-sample-helloworld5",
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
         },
         {
 			"kind": "main",
-			"tag": "com-sap-sample-helloworld4-aps",
+			"tag": "com-sap-sample-helloworld5-aps",
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/aps_webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
@@ -65,7 +65,7 @@
 			],
 			"body": "this.widgetText = newTextValue;"
 		}
-			
+	
 	},
 	"events": {
         "onClick": {

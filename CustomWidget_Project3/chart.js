@@ -63,13 +63,13 @@
 	}); // end am4core.ready()
 	</script>
 	
-	
+
 	<!-- HTML -->
 	<div id="chartdiv"></div>
 
     `;
 
-    customElements.define('com-sap-sample-helloworldtp', class HelloWorld1 extends HTMLElement {
+    customElements.define('com-sap-sample-helloworldtp', class Chart1 extends HTMLElement {
 
 
 		constructor() {
