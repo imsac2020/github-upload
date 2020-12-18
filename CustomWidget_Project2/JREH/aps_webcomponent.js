@@ -40,35 +40,6 @@
         get widgetText() {
             return this._shadowRoot.getElementById("aps_text").value;
         }
-        
-        //Fired when the widget is added to the html DOM of the page
-        connectedCallback(){
-            this.redraw();
-        }
-
-         //Fired when the widget is removed from the html DOM of the page (e.g. by hide)
-        disconnectedCallback(){
-        
-        }
-
-         //When the custom widget is updated, the Custom Widget SDK framework executes this function first
-		onCustomWidgetBeforeUpdate(oChangedProperties) {
-
-		}
-
-        //When the custom widget is updated, the Custom Widget SDK framework executes this function after the update
-		onCustomWidgetAfterUpdate(oChangedProperties) {
-
-        }
-        
-        //When the custom widget is removed from the canvas or the analytic application is closed
-        onCustomWidgetDestroy(){
-        
-        }
-
-        redraw(
-
-        );
 
 	}
 
