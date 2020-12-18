@@ -11,7 +11,7 @@
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "com-demo-hw",
+			"tag": "com-sap-sample-helloworld_SK",
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/SKOELLER/webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
