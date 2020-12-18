@@ -47,9 +47,6 @@
         
         }
 
-        redraw(
-
-        )
 
         _submit(e) {
             e.preventDefault();
