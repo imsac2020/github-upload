@@ -30,7 +30,7 @@
 		}
 
         //When the custom widget is updated, the Custom Widget SDK framework executes this function after the update
-		onCustomWidgetAfterUpdate(oChangedProperties) {
+        onCustomWidgetAfterUpdate(oChangedProperties) {
             this.redraw();
         }
         
@@ -45,6 +45,14 @@
         onCustomWidgetResize(width, height){
         }
         */
+        //Getters and Setters
+        get widgetText() {
+            return this._tagType;
+        }
+
+        set widgetText(value) {
+            this._tagText = value;
+        }
 
        redraw(){
         if (this._tagText != null){

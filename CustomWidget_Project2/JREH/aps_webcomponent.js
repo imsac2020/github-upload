@@ -39,7 +39,7 @@
 		}
 
 		get widgetText2() {
-            console.log("get widgetText APS2")
+            console.log("get widgetText APS3")
 			return this._shadowRoot.getElementById("aps_text").value;
 		}
 	}

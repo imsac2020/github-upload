@@ -1,19 +1,18 @@
 (function()  {
     let tmpl = document.createElement('template');
-   // der Text hier drin wird in der SAC dargestellt
     tmpl.innerHTML = `
     `;
 
-    customElements.define('com-sap-sample-sk-helloworld', class HelloWorld1 extends HTMLElement {
+    customElements.define('com-sap-sample-aa-helloworld1', class HelloWorld1 extends HTMLElement {
 
 
 		constructor() {
 			super(); 
 			this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-            this._tagContainer;
-            this._tagType = "h1";
-            this._tagText = "Hello World";
+            this.tagContainer;
+            this.tagType = "Header1";
+            this.tagText = "Hello Azmat";
 		}
 
         //Fired when the widget is added to the html DOM of the page
@@ -42,34 +41,11 @@
         
         //When the custom widget is resized on the canvas, the Custom Widget SDK framework executes the following JavaScript function call on the custom widget
         // Commented out by default
-        //
-        onCustomWidgetAfterUpdate(oChangedProperties) {
-            this.redraw();
-        }
         /*
         onCustomWidgetResize(width, height){
         }
         */
-        //Getters and Setters
-        get widgetText() {
-            return this._tagType;
-        }
 
-        set widgetText(value) {
-            this._tagText = value;
-        }
-        redraw(){
-            if (this._tagText != null){
-                if (this._tagContainer){
-                    this._tagContainer.parentNode.removeChild(this._tagContainer);
-                }
-        
-                var shadow = window.getSelection(this._shadowRoot);
-                this._tagContainer = document.createElement(this._tagType);
-                var theText = document.createTextNode(this._tagText);    
-                this._tagContainer.appendChild(theText); 
-                this._shadowRoot.appendChild(this._tagContainer);
-            }
-        }
+        redraw(){}
     });
 })();

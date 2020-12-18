@@ -15,6 +15,13 @@
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/KBONN/webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
+		},
+		{
+			"kind": "styling",
+			"tag": "com-sap-sample-hw-aps",
+			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/KBONN/aps_webcomponent.js",
+			"integrity": "",
+			"ignoreIntegrity": true
 		}
     ],
 	"properties": {
