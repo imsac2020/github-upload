@@ -1,8 +1,8 @@
 {
-	"name": "Hello World",
+	"name": "Hello Konstantin",
 	"description": "Custom Widget Template",
 	"eula": "",
-	"vendor": "Who created me?",
+	"vendor": "Konstantin Bonn",
 	"license": "",
 	"id": "com.sap.sample.template.KBv01",
 	"newInstancePrefix": "Widget_KBv01",
