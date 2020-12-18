@@ -3,7 +3,7 @@
     tmpl.innerHTML = `
     `;
 
-    customElements.define('com-sap-sample-helloworld1', class HelloWorld1 extends HTMLElement {
+    customElements.define('com-sap-sample-helloworld', class HelloWorld1 extends HTMLElement {
 
 
 		constructor() {
@@ -31,7 +31,9 @@
 
         //When the custom widget is updated, the Custom Widget SDK framework executes this function after the update
 		onCustomWidgetAfterUpdate(oChangedProperties) {
-            this.redraw();
+            if (this._firstConnection){
+                this.redraw();
+            }
         }
         
         //When the custom widget is removed from the canvas or the analytic application is closed
