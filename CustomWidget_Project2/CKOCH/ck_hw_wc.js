@@ -5,7 +5,6 @@
 
     customElements.define('com-sap-sample-ck-helloworld2', class HelloWorld1 extends HTMLElement {
 
-
 		constructor() {
 			super(); 
 			this._shadowRoot = this.attachShadow({mode: "open"});
