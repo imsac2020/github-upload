@@ -27,7 +27,7 @@
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							widgetText: this.widgetText2
+							widgetText: this.widgetText3
 						}
 					}
 			}));
@@ -39,7 +39,7 @@
 		}
 
 		get widgetText2() {
-            console.log("get widgetText APS2")
+            console.log("get widgetText APS3")
 			return this._shadowRoot.getElementById("aps_text").value;
 		}
 	}
