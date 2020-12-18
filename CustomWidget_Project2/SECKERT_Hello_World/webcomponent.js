@@ -6,7 +6,7 @@
       </style>
     `;
 
-    customElements.define('com-sap-sample-template', class WidgetTemplate extends HTMLElement {
+    customElements.define('com-sap-sample-template-se', class WidgetTemplate extends HTMLElement {
 
 
 		constructor() {
