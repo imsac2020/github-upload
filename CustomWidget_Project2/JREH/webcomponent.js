@@ -3,7 +3,7 @@
     tmpl.innerHTML = `
     `;
 
-    customElements.define('com-sap-sample-helloworld', class HelloWorld1 extends HTMLElement {
+    customElements.define('com-sap-sample-helloworld', class HelloWorld extends HTMLElement {
 
 
 		constructor() {
@@ -14,12 +14,13 @@
             this._tagContainer;
             this._tagType = "h1";
             this._tagText = "Hello World";
+
 		}
 
         //Fired when the widget is added to the html DOM of the page
         connectedCallback(){
             this._firstConnection = true;
-            this.redraw();      
+            this.redraw();       
         }
 
          //Fired when the widget is removed from the html DOM of the page (e.g. by hide)
@@ -41,6 +42,7 @@
         
         //When the custom widget is removed from the canvas or the analytic application is closed
         onCustomWidgetDestroy(){
+        
         }
 
         
@@ -48,11 +50,13 @@
         // Commented out by default
         /*
         onCustomWidgetResize(width, height){
+        
         }
         */
-       //Getters and Setters
-       get widgetText() {
-        return this._tagType;
+
+        //Getters and Setters
+        get widgetText() {
+            return this._tagType;
         }
 
         set widgetText(value) {
@@ -61,17 +65,18 @@
         // End - Getters and Setters
 
         redraw(){
+            if (this._tagContainer){
+                this._tagContainer.parentNode.removeChild(this._tagContainer);
+            }
 
-                if (this._tagContainer){
-                    this._tagContainer.parentNode.removeChild(this._tagContainer);
-                }
-    
-                var shadow = window.getSelection(this._shadowRoot);
-                this._tagContainer = document.createElement(this._tagType);
-                var theText = document.createTextNode(this._tagText);    
-                this._tagContainer.appendChild(theText); 
-                this._shadowRoot.appendChild(this._tagContainer);
-            
+            var shadow = window.getSelection(this._shadowRoot);
+            this._tagContainer = document.createElement(this._tagType);
+            var theText = document.createTextNode(this._tagText);    
+            this._tagContainer.appendChild(theText); 
+            this._shadowRoot.appendChild(this._tagContainer);
         }
+    
+    
     });
+        
 })();
