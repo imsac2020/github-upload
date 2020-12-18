@@ -1,0 +1,33 @@
+{
+	"name": "Hello World IH",
+	"description": "Custom Widget Template",
+	"eula": "",
+	"vendor": "Iiro Hietala",
+	"license": "",
+	"id": "com.sap.sample.template.0",
+	"newInstancePrefix": "WidgetTemplate",
+	"version": "0.0.1",
+	"icon": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/icon.png",
+	"webcomponents": [
+        {
+			"kind": "main",
+			"tag": "com-sap-sample-helloworld1",
+			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/webcomponent.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+        },
+        {
+			"kind": "main",
+			"tag": "com-demo-aps",
+			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/aps_webcomponent.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+    ],
+	"properties": {
+	},
+	"methods": {
+	},
+	"events": {
+	}
+}
