@@ -1,20 +1,27 @@
-(function() {
+(function()  {
 	let template = document.createElement("template");
 	template.innerHTML = `
 		<form id="form">
 			<fieldset>
-				<legend>Custom Widget Text</legend>
+				<legend>Color Properties</legend>
 				<table>
 					<tr>
-						<td>Text</td>
-						<td><input id="aps_text" type="string"></td>
+						<td>Color</td>
+						<td><input id="bps_color" type="text" size="10" maxlength="10"></td>
 					</tr>
 				</table>
+				<input type="submit" style="display:none;">
 			</fieldset>
 		</form>
+		<style>
+		:host {
+			display: block;
+			padding: 1em 1em 1em 1em;
+		}
+		</style>
 	`;
 
-	class HelloWorldAps extends HTMLElement {
+	class BoxBps extends HTMLElement {
 		constructor() {
 			super();
 			this._shadowRoot = this.attachShadow({mode: "open"});
@@ -27,22 +34,20 @@
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							widgetText: this.widgetText2
+							color: this.color
 						}
 					}
 			}));
 		}
 
-		set widgetText(newText) {
-            console.log("set widgetText APS")
-			this._shadowRoot.getElementById("aps_text").value = newText;
+		set color(newColor) {
+			this._shadowRoot.getElementById("bps_color").value = newColor;
 		}
 
-		get widgetText2() {
-            console.log("get widgetText APS2")
-			return this._shadowRoot.getElementById("aps_text").value;
+		get color() {
+			return this._shadowRoot.getElementById("bps_color").value;
 		}
 	}
 
-customElements.define("com-sap-sample-helloworld-aps", HelloWorldAps);
+	customElements.define("com-demo-box-bps", BoxBps);
 })();
