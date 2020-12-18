@@ -4,14 +4,14 @@
 	"eula": "",
 	"vendor": "Iiro Hietala",
 	"license": "",
-	"id": "com.sap.sample.template.0",
-	"newInstancePrefix": "WidgetTemplate",
+	"id": "com.sap.sample.helloworld2",
+	"newInstancePrefix": "HelloWorld2",
 	"version": "0.0.2",
 	"icon": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/icon.png",
 	"webcomponents": [
         {
 			"kind": "main",
-			"tag": "com-sap-sample-helloworld1",
+			"tag": "com-sap-sample-helloworld2",
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true

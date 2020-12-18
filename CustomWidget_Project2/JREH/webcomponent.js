@@ -45,6 +45,15 @@
         onCustomWidgetResize(width, height){
         }
         */
+       //Getters and Setters
+       get widgetText() {
+        return this._tagType;
+        }
+
+        set widgetText(value) {
+            this._tagText = value;
+        }
+    // End - Getters and Setters
 
        redraw(){
         if (this._tagText != null){
