@@ -1,10 +1,10 @@
 {
-	"name": "Hello World SH3",
+	"name": "Hello World SH4",
 	"description": "Custom Widget HW_Template",
 	"eula": "",
 	"vendor": "Stefanie Himmelsbach",
 	"license": "",
-	"id": "com.sap.sample.template_sh_hw3.0",
+	"id": "com.sap.sample.template_sh_hw4.0",
 	"newInstancePrefix": "HelloWorld1",
 	"version": "0.0.3",
 	"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAA3NCSVQICAjb4U/gAAAAb1BMVEX///+ZmZl4dXdBPj9hYGGOjpE6ODo8OjwvLC0lISIpJSaMiooyLzH/cjMxLi9GREb/ZSk2MzV9fX1MSks4NjcrJyn/WR9ycnJRT1AtKiv/TRVdXF1ra2v7VCfJyMk+PD6tra+rqqtUUlU0MTNqaGpjxDg2AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAKhJREFUGNM9z9EagiAMBeDpEGkWNAGhqFTq/Z8xwK/+q7PtZgeg6npEMcBPJ0d1Kmg6ZnFGRZcLESnR7tpoouuVSCPPZYHWee+XxTsrvQeYQrwV97tL5uZigMeoqucTUSnWEVBX4fWaW2BYz1W3bXsLDPldcD8MoYZ3glmMjNbGLJk5igDgnLTGHazdAPo1Gdms2bZXhRmbMuNR5rNWJuX075sMYg57jV94IQ2Xqt1atQAAAABJRU5ErkJggg==",
@@ -29,6 +29,11 @@
 			"type": "string",
 			"description": "The text to be displayed in the widget",
 			"default" : "Hello Stefanie - This could be your text to be displayed"
+		},
+		"headingType": {
+			"type": "string",
+			"description": "The heading level of the widget; h1-h3. Default is h1.",
+			"default" : "h1"
 		}
 	},
 	"methods": {

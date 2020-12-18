@@ -52,8 +52,15 @@
         }
         */
 
+        //Getters and Setters for HeadingType
+        get headingType() {
+            return this._tagType;
+            }
 
-        //Getters and Setters
+        set headingType(value) {
+            this._tagType = value;
+        }
+        
         get widgetText() {
             return this._tagType;
         }
