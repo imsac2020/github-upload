@@ -3,7 +3,7 @@
     tmpl.innerHTML = `
     `;
 
-    customElements.define('com-sap-sample-helloworld2', class HelloWorld1 extends HTMLElement {
+    customElements.define('com-sap-sample-helloworld3', class HelloWorld1 extends HTMLElement {
 
 
 		constructor() {
@@ -38,6 +38,14 @@
         onCustomWidgetDestroy(){
         }
 
+        //Getters and Setters
+        get widgetText() {
+            return this._tagType;
+        }
+
+        set widgetText(value) {
+            this._tagText = value;
+        }
         
         //When the custom widget is resized on the canvas, the Custom Widget SDK framework executes the following JavaScript function call on the custom widget
         // Commented out by default
@@ -58,6 +66,7 @@
             this._tagContainer.appendChild(theText); 
             this._shadowRoot.appendChild(this._tagContainer);
         }
+
     }
     });
 })();

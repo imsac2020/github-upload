@@ -1,31 +1,36 @@
 {
 	"name": "Hello World IH",
-	"description": "Hello World IH 2",
+	"description": "Hello World IH 3",
 	"eula": "",
 	"vendor": "Iiro Hietala",
 	"license": "",
-	"id": "com.sap.sample.helloworld2",
-	"newInstancePrefix": "HelloWorld2",
+	"id": "com.sap.sample.helloworld3",
+	"newInstancePrefix": "HelloWorld3",
 	"version": "0.0.2",
 	"icon": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/icon.png",
 	"webcomponents": [
         {
 			"kind": "main",
-			"tag": "com-sap-sample-helloworld2",
+			"tag": "com-sap-sample-helloworld3",
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
         },
         {
 			"kind": "main",
-			"tag": "com-demo-aps",
+			"tag": "com-sap-sample-helloworld3-aps",
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/aps_webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
     ],
 	"properties": {
-	},
+        "widgetText": {
+            "type": "string",
+            "description": "The text to be displayed in the widget",
+            "default" : "Hello World"
+        }
+    },
 	"methods": {
 	},
 	"events": {
