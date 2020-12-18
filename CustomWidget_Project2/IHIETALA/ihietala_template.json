@@ -2,7 +2,7 @@
 	"name": "Hello World IH",
 	"description": "Hello World IH 5",
 	"eula": "",
-	"vendor": "Iiro Hietala",
+	"vendor": "IH",
 	"license": "",
 	"id": "com.sap.sample.helloworld5",
 	"newInstancePrefix": "HelloWorld5",
