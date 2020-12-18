@@ -15,10 +15,22 @@
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/SKOELLER/sk_hw_wc.js",
 			"integrity": "",
 			"ignoreIntegrity": true
-        }
+        },
+		{
+			"kind": "styling",
+			"tag": "com-sap-sample-sk-helloworld3-aps",
+			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/SKOELLER/sk_hw_app_wc.js",
+			"integrity": "",
+			"ignoreIntegrity" : true
+		}
     ],
 	"properties": {
-	},
+		"widgetText": {
+			"type": "string",
+			"description": "The text to be displayed in the widget",
+			"default" : "Hello World Stephanie"
+		}
+	} ,
 	"methods": {
 	},
 	"events": {

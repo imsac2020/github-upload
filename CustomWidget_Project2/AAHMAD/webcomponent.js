@@ -1,20 +1,22 @@
-(function() {
-	let template = document.createElement("template");
-	template.innerHTML = `
-		<style>
-		</style>
-	`;
+(function()  {
+    let tmpl = document.createElement('template');
+    tmpl.innerHTML = `
+    `;
 
-	class HelloWorldAps extends HTMLElement {
+    customElements.define('com-sap-sample-aa-helloworld1', class HelloWorld1 extends HTMLElement {
+
+
 		constructor() {
-			super();
+			super(); 
 			this._shadowRoot = this.attachShadow({mode: "open"});
-			this._shadowRoot.appendChild(template.content.cloneNode(true));
+            this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
+            this.tagContainer;
+            this.tagType = "Header1";
+            this.tagText = "Hello Azmat";
 		}
 
         //Fired when the widget is added to the html DOM of the page
         connectedCallback(){
-            this.redraw();
         }
 
          //Fired when the widget is removed from the html DOM of the page (e.g. by hide)
@@ -29,19 +31,21 @@
 
         //When the custom widget is updated, the Custom Widget SDK framework executes this function after the update
 		onCustomWidgetAfterUpdate(oChangedProperties) {
-
+            this.redraw();
         }
         
         //When the custom widget is removed from the canvas or the analytic application is closed
         onCustomWidgetDestroy(){
-        
         }
 
-        redraw(
+        
+        //When the custom widget is resized on the canvas, the Custom Widget SDK framework executes the following JavaScript function call on the custom widget
+        // Commented out by default
+        /*
+        onCustomWidgetResize(width, height){
+        }
+        */
 
-        );
-
-	}
-
-customElements.define("com-sap-sample-ck-helloworld1'-aps", HelloWorldAps);
+        redraw(){}
+    });
 })();
