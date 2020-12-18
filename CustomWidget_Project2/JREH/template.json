@@ -28,7 +28,7 @@
 		"widgetText": {
 			"type": "string",
 			"description": "The text to be displayed in the widget",
-			"default" : "Hello World"
+			"default" : "Hello World a"
 		}
 	},
 	"methods": {

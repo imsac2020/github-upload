@@ -34,10 +34,12 @@
 		}
 
 		set widgetText(newText) {
+            console.log("set widgetText APS")
 			this._shadowRoot.getElementById("aps_text").value = newText;
 		}
 
 		get widgetText() {
+            console.log("get widgetText APS")
 			return this._shadowRoot.getElementById("aps_text").value;
 		}
 	}
