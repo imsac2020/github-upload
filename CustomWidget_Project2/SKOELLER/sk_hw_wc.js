@@ -4,7 +4,7 @@
         <h1>Hello Stephanie</h1>
     `;
 
-    customElements.define('com-sap-sample-sk-helloworld1', class HelloWorld1 extends HTMLElement {
+    customElements.define('com-sap-sample-sk-helloworld', class HelloWorld1 extends HTMLElement {
 
 
 		constructor() {
