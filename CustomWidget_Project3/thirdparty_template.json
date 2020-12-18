@@ -19,7 +19,7 @@
 ,
 		{
 			"kind": "main",
-			"tag": "com-sap-sample-helloworldtp2",
+			"tag": "com-sap-sample-chart",
 			"url": "https://cdn.amcharts.com/lib/4/charts.js",
 			"integrity": "",
 			"ignoreIntegrity": true
