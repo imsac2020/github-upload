@@ -14,7 +14,7 @@
     </form>
 	`;
 
-	class HelloWorldAps extends HTMLElement {
+	let HelloWorldAps = class HelloWorldAps extends HTMLElement {
 		constructor() {
 			super();
 			this._shadowRoot = this.attachShadow({mode: "open"});
