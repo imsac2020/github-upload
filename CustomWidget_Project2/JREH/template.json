@@ -11,13 +11,25 @@
 	"webcomponents": [
         {
 			"kind": "main",
-			"tag": "com-sap-sample-helloworld1",
+			"tag": "com-sap-sample-helloworld",
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/JREH/webcomponent.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "styling",
+			"tag": "com-sap-sample-helloworld-aps",
+			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/JREH/aps_webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
         }
     ],
 	"properties": {
+		"widgetText": {
+			"type": "string",
+			"description": "The text to be displayed in the widget",
+			"default" : "Hello World"
+		}
 	},
 	"methods": {
 	},

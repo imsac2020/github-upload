@@ -1,32 +1,71 @@
 {
 	"name": "Hello World IH",
-	"description": "Custom Widget Template",
+	"description": "Hello World IH 4",
 	"eula": "",
 	"vendor": "Iiro Hietala",
 	"license": "",
-	"id": "com.sap.sample.template.0",
-	"newInstancePrefix": "WidgetTemplate",
-	"version": "0.0.2",
+	"id": "com.sap.sample.helloworld4",
+	"newInstancePrefix": "HelloWorld4",
+	"version": "0.0.4",
 	"icon": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/icon.png",
 	"webcomponents": [
         {
 			"kind": "main",
-			"tag": "com-sap-sample-helloworld1",
+			"tag": "com-sap-sample-helloworld4",
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
         },
         {
 			"kind": "main",
-			"tag": "com-demo-aps",
+			"tag": "com-sap-sample-helloworld4-aps",
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/aps_webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
     ],
 	"properties": {
+		"headingType": {
+			"type": "string",
+			"description": "The heading level of the widget; h1-h3. Default is h1.",
+			"default" : "h1"
+		},
+		"widgetText": {
+			"type": "string",
+			"description": "The text to be displayed in the widget",
+			"default" : "Hello World"
+		}
 	},
 	"methods": {
+		"setH1": {
+			"description": "Update the hX tag of the KPI field to h1",
+			"body": "this.headingType = 'h1';"
+		},
+		"setH2": {
+			"description": "Update the hX tag of the KPI field to h2",
+			"body": "this.headingType = 'h2';"
+		},
+		"setH3": {
+			"description": "Update the hX tag of the KPI field to h3",
+			"body": "this.headingType = 'h3';"
+		},
+		"getH": {
+			"description": "Get the hX tag of the KPI field",
+			"body": "return this.headingType;",
+			"returnType": "string"
+		},
+		"setText": {
+			"description": "Set the text value of the widget",
+			"parameters": [
+				{
+					"name": "newTextValue",
+					"type": "string",
+					"description": "The displayed angle of the gauge"
+				}
+			],
+			"body": "this.widgetText = newTextValue;"
+		}
+			
 	},
 	"events": {
 	}
