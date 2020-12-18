@@ -6,7 +6,7 @@
 	"license": "",
 	"id": "com.sap.sample.helloworld3",
 	"newInstancePrefix": "HelloWorld3",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"icon": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/IHIETALA/icon.png",
 	"webcomponents": [
         {
