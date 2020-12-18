@@ -27,20 +27,22 @@
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							widgetText: this.widgetText
+							widgetText: this.widgetText2
 						}
 					}
 			}));
 		}
 
 		set widgetText(newText) {
+            console.log("set widgetText APS")
 			this._shadowRoot.getElementById("aps_text").value = newText;
 		}
 
-		get widgetText() {
+		get widgetText2() {
+            console.log("get widgetText APS3")
 			return this._shadowRoot.getElementById("aps_text").value;
 		}
 	}
 
-customElements.define("com-sap-sample-helloworld3-aps", HelloWorldAps);
+customElements.define("com-sap-sample-helloworld-aps", HelloWorldAps);
 })();
