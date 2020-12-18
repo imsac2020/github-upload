@@ -1,7 +1,7 @@
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
-    <h1>Hello World</h1>
+    
     `;
 
     customElements.define('com-demo-hw-se', class WidgetTemplate extends HTMLElement {
@@ -11,6 +11,11 @@
 			super(); 
 			let shadowRoot = this.attachShadow({mode: "open"});
             shadowRoot.appendChild(tmpl.content.cloneNode(true));
+
+            this._tagContainer;
+            this._tagType = 'h1';
+            this._tagText = 'Hello World SE redraw';
+
             console.log('constructor called')
 		}
 
@@ -56,6 +61,18 @@
 
         redraw(){
             console.log('redraw called')
+
+            if (this._tagText != null){
+                if (this._tagContainer){
+                    this._tagContainer.parentNode.removeChild(this._tagContainer);
+                }
+        
+                var shadow = window.getSelection(this._shadowRoot);
+                this._tagContainer = document.createElement(this._tagType);
+                var theText = document.createTextNode(this._tagText);    
+                this._tagContainer.appendChild(theText); 
+                this._shadowRoot.appendChild(this._tagContainer);
+            }
         }
     
     
