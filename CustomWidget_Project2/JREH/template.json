@@ -15,14 +15,7 @@
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/JREH/webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
-        },
-        {
-			"kind": "main",
-			"tag": "com-demo-aps",
-			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/JREH/aps_webcomponent.js",
-			"integrity": "",
-			"ignoreIntegrity": true
-		}
+        }
     ],
 	"properties": {
 	},
