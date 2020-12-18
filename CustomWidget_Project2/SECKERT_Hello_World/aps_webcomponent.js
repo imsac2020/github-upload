@@ -70,7 +70,7 @@
             return this._shadowRoot.getElementById("aps_text").value;
         }
 
-	}
+	};
 
 customElements.define("com-demo-hw-se-aps", HelloWorldAps);
 })();
