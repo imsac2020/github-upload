@@ -72,5 +72,5 @@
 
 	}
 
-customElements.define("com-demo-hw-se'-aps", HelloWorldAps);
+customElements.define("com-demo-hw-se-aps", HelloWorldAps);
 })();
