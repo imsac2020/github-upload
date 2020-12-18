@@ -18,7 +18,7 @@
 		},
 		{
 			"kind": "styling",
-			"tag": "com-sap-sample-template-aps",
+			"tag": "com-sap-sample-helloworld3-aps",
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/JREH/aps_webcomponent.js",
 			"integrity": "",
 			"ignoreIntegrity": true
