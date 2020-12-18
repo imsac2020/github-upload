@@ -3,7 +3,7 @@
     tmpl.innerHTML = `
     `;
 
-    customElements.define('com-sap-sample-helloworld1', class HelloWorld1 extends HTMLElement {
+    customElements.define('com-sap-sample-sk-helloworld', class HelloWorld1 extends HTMLElement {
 
 
 		constructor() {
@@ -45,22 +45,13 @@
         onCustomWidgetResize(width, height){
         }
         */
-       //Getters and Setters
-       get widgetText() {
-        return this._tagType;
-        }
-
-        set widgetText(value) {
-            this._tagText = value;
-        }
-        // End - Getters and Setters
 
         redraw(){
             if (this._tagText != null){
                 if (this._tagContainer){
                     this._tagContainer.parentNode.removeChild(this._tagContainer);
                 }
-    
+        
                 var shadow = window.getSelection(this._shadowRoot);
                 this._tagContainer = document.createElement(this._tagType);
                 var theText = document.createTextNode(this._tagText);    
