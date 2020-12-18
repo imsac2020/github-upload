@@ -1,7 +1,6 @@
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
-    
     `;
 
     customElements.define('com-sap-sample-sh-helloworld1', class HelloWorld1 extends HTMLElement {
@@ -15,7 +14,8 @@
             this._tagContainer;
             this._tagType = "h1";
             this._tagText = "Hello Stefanie - This is part 3";
-		}
+        
+        }
 
         //Fired when the widget is added to the html DOM of the page
         connectedCallback(){
@@ -66,17 +66,16 @@
 
         //Redraw
         redraw(){
-        if (this._tagText != null){
             if (this._tagContainer){
                 this._tagContainer.parentNode.removeChild(this._tagContainer);
             }
-    
+
             var shadow = window.getSelection(this._shadowRoot);
             this._tagContainer = document.createElement(this._tagType);
             var theText = document.createTextNode(this._tagText);    
             this._tagContainer.appendChild(theText); 
             this._shadowRoot.appendChild(this._tagContainer);
         }
-    }
     });
+
 })();
