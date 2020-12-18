@@ -56,10 +56,12 @@
 
         //Getters and Setters
         get widgetText() {
-            return this._tagType;
+            console.log("get widgetText Normal")
+            return this._tagText;
         }
 
         set widgetText(value) {
+            console.log("set widgetText Normal")
             this._tagText = value;
         }
         // End - Getters and Setters
