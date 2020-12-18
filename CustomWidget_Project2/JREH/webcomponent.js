@@ -50,7 +50,7 @@
         */
        //Getters and Setters
        get widgetText() {
-        return this._tagText;
+        return this._tagType;
         }
 
         set widgetText(value) {
