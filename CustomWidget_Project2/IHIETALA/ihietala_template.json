@@ -1,5 +1,5 @@
 {
-	"name": "Hello World IH 5",
+	"name": "Hello World IH",
 	"description": "Hello World IH 5",
 	"eula": "",
 	"vendor": "Iiro Hietala",
@@ -65,7 +65,7 @@
 			],
 			"body": "this.widgetText = newTextValue;"
 		}
-			
+	
 	},
 	"events": {
         "onClick": {

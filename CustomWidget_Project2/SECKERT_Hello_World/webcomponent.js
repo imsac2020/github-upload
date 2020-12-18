@@ -16,6 +16,12 @@
             this._tagType = 'h1';
             this._tagText = 'Hello World SE redraw';
 
+            //Adding event handler for click events
+			this.addEventListener("click", event => {
+				var event = new Event("onClick");
+				this.dispatchEvent(event);
+            });
+
             console.log('constructor called')
 		}
 
@@ -87,7 +93,7 @@
             return this._tagType;
         }
 
-        set headingType (value){
+        set tagType(value){
             this._tagType = value;
         }
     
