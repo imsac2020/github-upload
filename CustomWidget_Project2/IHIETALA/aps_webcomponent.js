@@ -42,5 +42,5 @@
 		}
 	}
 
-customElements.define("com-sap-sample-helloworld3-aps", HelloWorldAps);
+customElements.define("com-sap-sample-helloworld4-aps", HelloWorldAps);
 })();
