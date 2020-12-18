@@ -18,7 +18,7 @@
 		},
 		{
 			"kind": "styling",
-			"tag": "com-sap-sample-sh-helloworld1-aps",
+			"tag": "com-sap-sample-sh-helloworld1'-aps",
 			"url": "https://imsac2020.github.io/github-upload/CustomWidget_Project2/SHIMMELSBACH/sh_hw2_aps.js",
 			"integrity": "",
 			"ignoreIntegrity": true
