@@ -39,9 +39,8 @@
 
         //When the custom widget is updated, the Custom Widget SDK framework executes this function after the update
 		onCustomWidgetAfterUpdate(oChangedProperties) {
-            if (this._firstConnection){
-                this.redraw();
-            }
+            
+            this.redraw();
             console.log('onCustomWidgetAfterUpdate called')
         }
         
@@ -73,6 +72,15 @@
                 this._tagContainer.appendChild(theText); 
                 this._shadowRoot.appendChild(this._tagContainer);
             }
+        }
+
+        //Getters and Setters
+        get widgetText() {
+            return this._tagType;
+        }
+
+        set widgetText(value) {
+            this._tagText = value;
         }
     
     
